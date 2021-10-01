@@ -1,0 +1,303 @@
+/*General Styling*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+   font-family: 'Quicksand', sans-serif;
+   line-height: 1.4;
+   color: #333; 
+   overflow-x: hidden;
+}
+
+/*Utility Classes*/
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-primary {
+
+    color: #c06c6c;
+}
+
+.bg-dark{
+  background: #f4f4f4;  
+  color: #333;
+}
+
+/*Navbar*/
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(37, 37, 37);
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #c06c6c;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+    background-color: #c06c6c;
+}
+
+/*Showcase Area*/
+#showcase {
+    background: url(../img/background-unsplash.jpg) no-repeat center center/cover;
+    height: 91.7vh;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+
+}
+
+.showcase-content h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem 10rem;
+    background: rgb(37, 37, 37);
+    transition: color 0.3s, background 0.3s;
+}
+
+.showcase-content .btn:hover{
+    background: #c06c6c;
+    color: #fff;
+
+}
+
+.btn{
+    color: #c06c6c;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #c06c6c;
+    border-radius: 10px;
+    font-weight: bold;
+} 
+
+/* Section: About*/
+
+#about {
+    padding: 10rem;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead{
+    margin-bottom: 1rem;
+}
+
+ 
+#about .about-content {
+    display: flex;
+}
+
+#about .about-text, #about .about-image {
+    flex: 1;
+}
+
+#about .about-text {
+    text-align:justify;
+}
+
+#about .about-image img{
+
+    display: block;
+    margin-left: auto;
+    width: 75%;
+    border-radius: 40%;
+    margin-top: 60px;
+}   
+
+/* Section: Portfolio*/
+
+ #portfolio-images{
+margin: 0;
+padding: 0;
+/* background-color: grey; */
+box-sizing: border-box;
+}
+
+#portfolio-images body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#portfolio-images .main{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px, 100px));
+    column-gap: 0px;
+    row-gap: 0px;
+}
+
+#portfolio-images img{
+    margin: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    object-position: center;
+} 
+
+/* Section: Contact*/
+
+#contact{
+    padding: 5rem 0;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 8rem;
+}
+
+#contact h3{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    margin-top: 5rem;
+}
+
+#contact .form-box{
+    background: #fff;
+    padding: 3rem;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    border-radius: 10px;
+}
+
+#contact .form-group{
+    margin-bottom: 2rem;
+}
+
+#contact .form-group label{
+
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.1rem;
+}
+
+#contact .form-group input, #contact .form-group textarea {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: 0.5px solid #333;
+    border-radius: 5px;
+}
+
+ #contact .form-group ::placeholder{
+    font-family: 'Quicksand', sans-serif;
+} 
+
+#contact .form-group textarea{
+    font-family: 'Quicksand', sans-serif; 
+}
+
+#contact .contact-btn{
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border:none;
+    border: 5px;
+    font-size: 1.5rem;
+    background: #c06c6c;
+    color: #fff;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact .contact-btn:hover{
+    background: #8a4e4e;
+}
+
+#contact .form-container{
+    position: relative;
+}
+
+   #contact .mail-icon{
+   
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%; 
+    top: -7;
+}    
+
+/*Footer Classes*/
+footer{
+    padding: 2.5rem;
+}
+
+footer p{
+    text-align: center;
+}
+
